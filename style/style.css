@@ -10,7 +10,6 @@
     margin: 0%;
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--darkBlue);
-    background-color: #185F8F;
 }
 
 .headeContainer
@@ -20,5 +19,3 @@
     align-content: space-between;
     flex-direction: row;
 }
-
-body{}
