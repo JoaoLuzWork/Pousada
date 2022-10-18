@@ -10,13 +10,16 @@
     $statement = $db->prepare($sql);
     $statement->execute();
 
+    $dados = array(
 
-   /*  while ($row = $statement->fetch()) {
-        $produtos[] = new Produto($row["name"], $row["value"], $row["custo"], $row["estoque"]); 
-    }
-     */
-    $parametros = [];
+        "title" => "Home",
+        "Matriz2x" => "Calcular matriz 2x2:",
+        "Matriz3X" => "Calcular matriz 3x3:",
+        "escolha" => "Escolha qual tamanho de matriz deseja calcular:"
+        
+    );
+
     $template = $twig->load('index.twig');
-    echo $template->render($parametros);
+    echo $template->render($dados);
 
 
