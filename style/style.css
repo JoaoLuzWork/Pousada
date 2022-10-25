@@ -3,6 +3,8 @@
 :root
 {
     --darkBlue: #185F8F;
+    --Blue: #3282B8;
+    --ligthBlue: #87CFFF;
 }
 
 *
@@ -12,10 +14,76 @@
     color: var(--darkBlue);
 }
 
-.headeContainer
+body
 {
     display: flex;
-    align-items: center;
-    align-content: space-between;
+    flex-direction: column;
+    justify-content: center; 
+    overflow-x: hidden;
+}
+
+a
+{
+    color: var(--darkBlue);
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: var(--ligthBlue);
+}
+
+a:active
+{
+    color: var(--Blue);
+}
+.headerContainer
+{
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    border-bottom: 1px solid var(--darkBlue);
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo
+{
+    width: 50px;
+}
+
+.logoI
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.navBar
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+   
+}
+
+@media screen and ( max-width: 700px) 
+{
+    .navBar
+    {
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    .tittle
+    {
+        font-size: large;
+    }
 }
