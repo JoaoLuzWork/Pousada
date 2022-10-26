@@ -49,6 +49,7 @@ a:active
 header
 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -66,24 +67,60 @@ header
     gap: 20px;
 }
 
-.navBar
+.nav
 {
     display: flex;
     justify-content: space-around;
     gap: 20px;
-   
 }
 
+.navBar
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.android
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+.searchBar
+{
+    position: absolute;
+    visibility: hidden;
+}
 @media screen and ( max-width: 700px) 
 {
-    .navBar
+    a
+    {
+        font-size: larger;
+    }
+    .nav
     {
         position: absolute;
         visibility: hidden;
     }
     
+    .navIcon
+    {
+        position:initial;
+    }
+    .android
+    {
+        visibility: visible;
+    }
+    
+    .headerContainer
+    {
+        gap: 32px;
+    }
+
     .tittle
     {
-        font-size: large;
+        font-size: x-large;
     }
 }
