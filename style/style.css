@@ -5,6 +5,7 @@
     --darkBlue: #185F8F;
     --Blue: #3282B8;
     --ligthBlue: #87CFFF;
+    --darkBlue-shadow: #185f8fc5;
 }
 
 *
@@ -12,6 +13,7 @@
     margin: 0%;
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--darkBlue);
+    position: relative;
 }
 
 button
@@ -97,12 +99,39 @@ header
     visibility: hidden;
 }
 
+.branco
+{
+    color: white;
+}
+
+.link-resrva1
+{
+    z-index: 100000;
+}
+
+.wave1
+{
+    max-width: 100%;
+    z-index: -1;
+}
+
+.section
+{
+    flex-wrap: nowrap;
+}
+
 @media screen and ( max-width: 700px) 
 {
     a
     {
         font-size: larger;
     }
+
+    a:hover
+    {
+        color: var(--darkBlue);  
+    }
+    
     .nav
     {
         position: absolute;
@@ -116,11 +145,15 @@ header
 
     .navBar
     {
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        text-decoration: underline;
         visibility: visible;
+        padding-bottom: 1em;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 0px 2px 5px 0px var(--darkBlue-shadow);
     }
 
     .android
@@ -136,5 +169,5 @@ header
     .tittle
     {
         font-size: x-large;
-    }
+    }   
 }
