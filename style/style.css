@@ -138,17 +138,6 @@ a:active
     margin-top: 100%;
 }
 
-.index1
-{
-    z-index: 1;
-    width: 100%;
-}
-
-.index2
-{
-    z-index: 2;
-}
-
 @media screen and ( max-width: 650px) 
 {
     a
@@ -199,6 +188,39 @@ a:active
     {
         font-size: x-large;
     }   
+    .link-reserva1
+    {
+        font-size: 125%;
+    }
+    .index1
+    {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .index2
+    {
+        position: absolute;
+        z-index: 2;
+        width: 90%;
+        margin: 5%;
+        top: 30px;
+    }
+
+    .titulos
+    {
+        position: absolute;
+        margin-top: 80%;
+        margin-left: 2%;
+    }
+
+    .textos
+    {
+        position: absolute;
+        margin-top: 90%;
+        margin-left: 5%;
+    }
 }
 
 @media screen and ( max-width: 500px) 
