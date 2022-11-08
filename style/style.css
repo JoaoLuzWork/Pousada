@@ -22,13 +22,15 @@ button
     border: none;
 }
 
-body
+header
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    overflow-x: hidden;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+
 
 a
 {
@@ -53,14 +55,6 @@ a:active
     align-items: center;
     width: 90%;
     border-bottom: 1px solid var(--darkBlue);
-}
-
-header
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 .logo
@@ -110,20 +104,26 @@ header
 {
     position: absolute;
     z-index: 3;
-    top: 7.5em;
-    left: 20%;
+    margin-top: 38%;
+    margin-left: 22%;
     color: white;
     border-radius: 20px;
-    
+    font-size:100%;
 }
 
 .link-back
 {
     position: absolute;
     z-index: 2;
-    top: 8em;
-    left: 10%;
-    width: 80%;
+    margin-top: 35%;
+    margin-left: 15%;
+    width: 70%;
+}
+
+.container1
+{
+    display: flex;
+    align-items: center;
 }
 
 .wave1
@@ -149,7 +149,7 @@ header
     z-index: 2;
 }
 
-@media screen and ( max-width: 700px) 
+@media screen and ( max-width: 650px) 
 {
     a
     {
@@ -199,4 +199,16 @@ header
     {
         font-size: x-large;
     }   
+}
+
+@media screen and ( max-width: 500px) 
+{
+    .link-reserva1
+    {
+        font-size: 125%;
+    }
+    .link-reserva1:hover
+    {
+        color: white;
+    }
 }
