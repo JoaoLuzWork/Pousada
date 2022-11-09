@@ -137,15 +137,6 @@ a:active
     transform: translateY(5px);
 }
 
-.link-back
-{
-    position: absolute;
-    z-index: 2;
-    margin-top: 35%;
-    margin-left: 15%;
-    width: 70%;
-}
-
 .container1
 {
     display: flex;
@@ -162,6 +153,33 @@ a:active
 .section
 {       
     margin-top: 100%;
+}
+
+footer
+{
+    margin-top: 100%;
+}
+
+.footer
+{
+    position: absolute;
+}
+
+.footer_img_P
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+.footer_img_G
+{
+    width: 100%;
+    z-index: 1;
+}
+
+.link_redes
+{
+
 }
 
 @media screen and ( max-width: 700px) 
@@ -279,6 +297,18 @@ a:active
         flex-direction: column;
         justify-content:space-around;
         gap: 150px;
+    }
+    .footer_img_P
+    {
+        
+        width: 100%;
+        z-index: 6;
+    }
+
+    .footer_img_G
+    {
+        position: absolute;
+        visibility: hidden;
     }
 }
 
