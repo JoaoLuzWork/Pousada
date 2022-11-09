@@ -13,7 +13,12 @@
     margin: 0%;
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--darkBlue);
-    position: relative;
+    position: relative;   
+}
+
+body
+{
+    overflow-x: hidden;
 }
 
 button
@@ -100,15 +105,36 @@ a:active
     color: white;
 }
 
-.link-reserva1
+.link-reserva-Min
 {
     position: absolute;
     z-index: 3;
-    margin-top: 38%;
-    margin-left: 22%;
-    color: white;
+    margin-top: 35%;
+    width: 100%;
     border-radius: 20px;
-    font-size:100%;
+    
+}
+
+.button
+{
+    position: absolute;
+    background-color: var(--ligthBlue);
+    margin-left: 10%;
+    height: 50px;
+    box-shadow: 0px 5px 5px var(--darkBlue-shadow);
+    border-radius: 50px;
+
+}
+.button h2
+{
+    font-size: medium;
+    color: white;    
+}
+
+.button:active {
+    background-color: var(--ligthBlue);
+    box-shadow: 0 0px;
+    transform: translateY(5px);
 }
 
 .link-back
@@ -140,6 +166,7 @@ a:active
 
 @media screen and ( max-width: 700px) 
 {
+
     a
     {
         font-size: larger;
@@ -226,9 +253,16 @@ a:active
         text-align: justify;
     }
 
-    .tit
+    .button
     {
-        
+        height: 75px;
+        width: 80%;
+    }
+
+    .button h2
+    {
+        font-size: clamp(0.5em, 4vw, 2rem); 
+        color: white;    
     }
 
     .containerIMGs
@@ -250,12 +284,8 @@ a:active
 
 @media screen and ( max-width: 500px) 
 {
-    .link-reserva1
+    .button
     {
-        font-size: 125%;
-    }
-    .link-reserva1:hover
-    {
-        color: white;
+        height: 50px;
     }
 }
