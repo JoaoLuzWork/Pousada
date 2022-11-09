@@ -35,8 +35,6 @@ header
     justify-content: space-around;
 }
 
-
-
 a
 {
     text-decoration: none;
@@ -112,7 +110,6 @@ a:active
     margin-top: 35%;
     width: 100%;
     border-radius: 20px;
-    
 }
 
 .button
@@ -123,8 +120,8 @@ a:active
     height: 50px;
     box-shadow: 0px 5px 5px var(--darkBlue-shadow);
     border-radius: 50px;
-
 }
+
 .button h2
 {
     font-size: medium;
@@ -158,28 +155,37 @@ a:active
 footer
 {
     margin-top: 100%;
+    margin-bottom: 0px ;
 }
 
 .footer
 {
+    
+}
+
+.redes
+{
     position: absolute;
+    z-index: 3;
 }
 
 .footer_img_P
 {
-    position: absolute;
     visibility: hidden;
+    width: 100%;
+    z-index: 1;
 }
 
 .footer_img_G
 {
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .link_redes
 {
-
+    position: absolute;
+    z-index: 3;
 }
 
 @media screen and ( max-width: 700px) 
@@ -298,11 +304,10 @@ footer
         justify-content:space-around;
         gap: 150px;
     }
+    
     .footer_img_P
     {
-        
-        width: 100%;
-        z-index: 6;
+        visibility: visible;
     }
 
     .footer_img_G
