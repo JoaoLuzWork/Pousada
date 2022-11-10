@@ -11,6 +11,7 @@
 *
 {
     margin: 0%;
+    padding: 0%;
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--darkBlue);
     position: relative;   
@@ -129,8 +130,6 @@ a:active
 }
 
 .button:active {
-    background-color: var(--ligthBlue);
-    box-shadow: 0 0px;
     transform: translateY(5px);
 }
 
@@ -155,20 +154,40 @@ a:active
 footer
 {
     margin-top: 100%;
-    margin-bottom: 0px ;
+    margin-bottom: 0%;
+    width: 100%;
 }
 
 .footer
 {
-    
+    display: flex;
+    justify-content:space-between;
+}
+
+footer h2
+{
+    color: white;
+}
+
+footer h4
+{
+    color: white;
 }
 
 .redes
 {
+    bottom: 16%;
+    left: 55%;
+    width: 50%;
     position: absolute;
     z-index: 3;
 }
 
+.redes_icon
+{
+    display: flex;
+    flex-direction: row;
+}
 .footer_img_P
 {
     visibility: hidden;
@@ -182,15 +201,76 @@ footer
     z-index: 2;
 }
 
-.link_redes
+.footer_logo
 {
     position: absolute;
+    border-bottom: 2px solid white;
+}
+
+.link_redes1
+{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 2px;
+    margin-top:5%;
     z-index: 3;
+}
+
+.link_redes2
+{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 2px;
+    margin-top:5%;
+    margin-left:20%;
+    z-index: 3;
+}
+
+.link_redes3
+{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 2px;
+    margin-top:5%;
+    margin-left:40%;
+    z-index: 3;
+}
+
+.datas
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    width: 50%;
+    z-index: 3;
+    border-right: 2px solid white;
+}
+
+.datas h2
+{
+    margin-right: 1%;
+}
+
+.horas
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.datas dl dt
+{
+    color: white;
 }
 
 @media screen and ( max-width: 700px) 
 {
-
+    
     a
     {
         font-size: larger;
@@ -308,6 +388,7 @@ footer
     .footer_img_P
     {
         visibility: visible;
+        width: 100%;
     }
 
     .footer_img_G
@@ -315,9 +396,14 @@ footer
         position: absolute;
         visibility: hidden;
     }
+
+    .redes_logo
+    {
+        width: 30px;
+    }
 }
 
-@media screen and ( max-width: 500px) 
+@media screen and ( max-width: 540px) 
 {
     .button
     {
