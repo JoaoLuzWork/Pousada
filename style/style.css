@@ -164,8 +164,16 @@ footer
     justify-content:space-between;
 }
 
+footer p
+{
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin-top: 2%;
+    color: white;
+}
+
 footer h2
 {
+    font-size: clamp(1rem, 6vw, 2rem);
     color: white;
 }
 
@@ -176,7 +184,7 @@ footer h4
 
 .redes
 {
-    bottom: 16%;
+    top: 67%;
     left: 55%;
     width: 50%;
     position: absolute;
@@ -188,6 +196,15 @@ footer h4
     display: flex;
     flex-direction: row;
 }
+
+.Large_Logo
+{
+    width: 50%;
+    border-right: 2px solid white;
+    padding-right: 10px;
+    z-index: 3;
+}
+
 .footer_img_P
 {
     visibility: hidden;
@@ -203,8 +220,14 @@ footer h4
 
 .footer_logo
 {
+    display: flex;
     position: absolute;
-    border-bottom: 2px solid white;
+    width: 95%;
+    top: 33%;
+    left: 2%;
+    padding-bottom: 3%;
+    gap: 20px;
+    z-index: 3;
 }
 
 .link_redes1
@@ -244,11 +267,10 @@ footer h4
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 5%;
+    top: 67%;
     left: 2%;
     width: 50%;
     z-index: 3;
-    border-right: 2px solid white;
 }
 
 .datas h2
@@ -265,6 +287,7 @@ footer h4
 
 .datas dl dt
 {
+    font-size: clamp(1rem, 4vw, 2rem);
     color: white;
 }
 
@@ -365,7 +388,7 @@ footer h4
 
     .button h2
     {
-        font-size: clamp(0.5em, 4vw, 2rem); 
+        font-size: clamp(1em, 5vw, 2rem); 
         color: white;    
     }
 
