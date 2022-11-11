@@ -1,0 +1,36 @@
+{% include "header.html" %}
+    <section>
+        <div>
+            <h1>Sobre a Pousada</h1>
+            <img class="a" src="./img/blob1_sobre.svg" alt="">
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="slide" src="./img/slide.svg" alt=""></div>
+                <div class="swiper-slide"><img class="slide" src="./img/slide2.svg" alt=""></div>
+                <div class="swiper-slide"><img class="slide" src="./img/slide3.svg" alt=""></div>
+                <div class="swiper-slide"><img class="slide" src="./img/slide4.svg" alt=""></div>
+                <div class="swiper-slide"><img class="slide" src="./img/cozinha.svg" alt=""></div>
+                <div class="swiper-slide"><img class="slide" src="./img/quarto1.svg" alt=""></div>
+                <div class="swiper-slide"><img class="slide" src="./img/fachada2.svg" alt=""></div>
+                <div class="swiper-slide"><img class="" src="./img/.svg" alt=""></div>
+                <div class="swiper-slide"><img class="" src="./img/.svg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+        </script>
+    </section>
+{% include "footer.html" %}

@@ -148,12 +148,12 @@ a:active
 
 .section
 {       
-    margin-top: 100%;
+    margin-top: 110%;
 }
 
 footer
 {
-    margin-top: 100%;
+    margin-top: 140%;
     margin-bottom: 0%;
     width: 100%;
 }
@@ -365,6 +365,7 @@ footer h4
     .titulos
     {
         position: absolute;
+        font-size: clamp(1rem, 5vw, 2rem);
         z-index: 3;
         margin-top: 80%;
         margin-left: 2%;
@@ -372,8 +373,9 @@ footer h4
 
     .textos
     {
-        z-index: 3;
         position: absolute;
+        font-size: clamp(1rem, 4vw, 2rem);
+        z-index: 3;
         margin-top: 90%;
         margin-left: 5%;
         margin-right: 5%;
@@ -424,6 +426,55 @@ footer h4
     {
         width: 30px;
     }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        z-index: 3;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .slide
+      {
+        width: 80%;
+      }
+
+      .a
+      {
+        width: 100%;
+        z-index: 1;
+      }
 }
 
 @media screen and ( max-width: 540px) 
