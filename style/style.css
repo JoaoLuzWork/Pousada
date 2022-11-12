@@ -63,7 +63,7 @@ a:active
 
 .logo
 {
-    width: 50px;
+    width: 23%;
 }
 
 .logoI
@@ -470,10 +470,54 @@ footer h4
         width: 80%;
       }
 
-      .a
+      .container_sobre
+      {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        border-bottom-width: 80%;
+        margin-bottom: 10%;
+      }
+
+      .container_sobre h1
+      {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 15%;
+        font-size: clamp(1rem, 8vw, 3rem);
+        text-decoration:underline;
+        z-index: 3;
+      }
+
+      .container_sobre p
+      {
+        position: absolute;
+        text-align: justify;
+        margin-top: 40%;
+        margin-left: 10%;
+        width: 80%;
+        font-size: clamp(1rem, 5vw, 2rem);
+        z-index: 3;
+      }
+
+      .border
+      {
+        margin-top: 10%;
+        align-self: center;
+        width: 80%;
+        border-bottom: 2px solid var(--Blue);
+        z-index: 4;
+      }
+
+      .back_sobre
       {
         width: 100%;
         z-index: 1;
+      }
+
+      .container_fotos
+      {
+        margin-top: 40%;
       }
 }
 
