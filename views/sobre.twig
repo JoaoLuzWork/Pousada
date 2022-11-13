@@ -1,6 +1,6 @@
 {% include "header.html" %}
     <section>
-        <div class="container_sobre">
+        <div class="container_sobre t">
             <div>
                 <h1>Sobre a Pousada</h1>
                 <p>&nbsp &nbsp A Pousada Silvestre é uma pousada urbana no coração de Tramandaí a poucos minutos do centro comercial
@@ -13,27 +13,40 @@
             <img class="back_sobre" src="./img/blob1_sobre.svg" alt="">
             <div class="border"></div>
         </div>
-        <div class="container_fotos">
+        <div class="container_fotos t">
             <h1>Galeria</h1>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="slide" src="./img/slide.svg" alt=""></div>
-                    <div class="swiper-slide"><img class="slide" src="./img/slide2.svg" alt=""></div>
-                    <div class="swiper-slide"><img class="slide" src="./img/slide3.svg" alt=""></div>
-                    <div class="swiper-slide"><img class="slide" src="./img/slide4.svg" alt=""></div>
-                    <div class="swiper-slide"><img class="slide" src="./img/cozinha.svg" alt=""></div>
-                    <div class="swiper-slide"><img class="slide" src="./img/quarto1.svg" alt=""></div>
-                    <div class="swiper-slide"><img class="slide" src="./img/fachada2.svg" alt=""></div>
-                    <div class="swiper-slide"><img class="" src="./img/.svg" alt=""></div>
-                    <div class="swiper-slide"><img class="" src="./img/.svg" alt=""></div>
+            <div>
+                <img class="back_img" src="./img/blob2_sobre.svg" alt="">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="slide" src="./img/slide1.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide2.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide3.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide4.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide5.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide6.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide7.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide8.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide9.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide10.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide11.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide12.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
+            <div class="border"></div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <div class="wave_duvida t"> 
+            <a class="link-reserva-Min android" href=""><button class="button"><h2>Qualquer dúvida entre em contato conosco:</h2></button></a>
+            <img class="wave1 android" src="./img/wave_reserva.svg" alt="">  
+        </div>
 
-        <!-- Initialize Swiper -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        
         <script>
         var swiper = new Swiper(".mySwiper", {
             navigation: {
@@ -42,5 +55,6 @@
             },
         });
         </script>
+
     </section>
 {% include "footer.html" %}

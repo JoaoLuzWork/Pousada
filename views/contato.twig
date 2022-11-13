@@ -1,0 +1,34 @@
+{% include "header.html" %}
+    <section>
+        <div class="container_sobre t">
+            <div>
+                <form action="processaM2.php" method="GET" id="Calc">
+                    <div>
+                        <label for="">X 1:</label>
+                        <input type="number" name="x1">
+
+                        <label for="">Y 1:</label>
+                        <input type="number" name="y1">
+                        
+                        <label for="">Resultado 1:</label>
+                        <input type="number" name="resultado1">
+                    </div> 
+                    <div>
+                        <label for="">X 2:</label>
+                        <input type="number" name="x2">
+
+                        <label for="">Y 2:</label>
+                        <input type="number" name="y2">
+                        
+                        <label for="">Resultado 2:</label>
+                        <input type="number" name="resultado2">
+                    </div> 
+
+                    <input type="submit" value="calcular">
+                </form>
+            </div>    
+            <img class="back_sobre" src="./img/blob1_sobre.svg" alt="">
+            <div class="border"></div>
+        </div>
+    </section>
+{% include "footer.html" %}
