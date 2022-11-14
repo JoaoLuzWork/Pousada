@@ -1,34 +1,71 @@
 {% include "header.html" %}
     <section>
-        <div class="container_sobre t">
+        <div class="container_big t">
             <div>
-                <form action="processaM2.php" method="GET" id="Calc">
-                    <div>
-                        <label for="">X 1:</label>
-                        <input type="number" name="x1">
+                <form class="container_contato" action="" method="POST">
+                    
+                    <div class="contato_div">
+                        <label for=""><h2>Seu Nome completo</h2></label>
+                        <input type="text" name="x1" placeholder="Ex: João Da Silva">
+                    </div>
 
-                        <label for="">Y 1:</label>
-                        <input type="number" name="y1">
+                    <div class="contato_div">
+                        <label for=""><h2>Seu Email</h2></label>
+                        <input type="text" name="y1" placeholder="Ex: joao.da.silva@gmail.com">
+                    </div>
                         
-                        <label for="">Resultado 1:</label>
-                        <input type="number" name="resultado1">
-                    </div> 
-                    <div>
-                        <label for="">X 2:</label>
-                        <input type="number" name="x2">
+                    <div class="contato_div">
+                        <label for=""><h2>Telefone:</h2></label>
+                        <input type="text" name="resultado1" placeholder="Telefone">
+                    </div>
 
-                        <label for="">Y 2:</label>
-                        <input type="number" name="y2">
-                        
-                        <label for="">Resultado 2:</label>
-                        <input type="number" name="resultado2">
-                    </div> 
+                    <div class="container_compress">
+                        <div class="Div_50p">
+                            <label for=""><h2>Data de entrada</h2></label>
+                            <input type="date" name="x2" placeholder="Email">
+                        </div>
 
-                    <input type="submit" value="calcular">
+                        <div class="Div_50p">
+                            <label for=""><h2>Data de saida</h2></label>
+                            <input type="date" name="y2" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="container_compress">
+                        <div class="Div_50p">
+                            <label for=""><h2>Adultos</h2></label>
+                            <select name="adultos">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+
+                        <div class="Div_50p">
+                            <label for=""><h2>Crianças</h2></label>
+                            <select name="criancas">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contato_div">
+                        <label for=""><h2>Mensagem</h2></label>
+                        <input type="number" name="resultado2" placeholder="Escreva sua mensagem"> 
+                    </div>
+
+                    <input class="submit" type="submit" value="Enviar">
                 </form>
             </div>    
-            <img class="back_sobre" src="./img/blob1_sobre.svg" alt="">
+            <img class="back_big" src="./img/blob1_contato.svg" alt="">
             <div class="border"></div>
         </div>
+
+        <div></div>
     </section>
 {% include "footer.html" %}
