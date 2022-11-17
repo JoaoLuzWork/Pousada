@@ -1,39 +1,40 @@
 {% include "header.html" %}
-    <section>
+    <section >
         <div class="container_big t">
             <div>
+                <h1 class="cont_font">Consulte disponibilidade</h1>
                 <form class="container_contato" action="" method="POST">
                     
                     <div class="contato_div">
-                        <label for=""><h2>Seu Nome completo</h2></label>
+                        <label for=""><h2>Seu Nome completo*</h2></label>
                         <input type="text" name="x1" placeholder="Ex: João Da Silva">
                     </div>
 
                     <div class="contato_div">
-                        <label for=""><h2>Seu Email</h2></label>
+                        <label for=""><h2>Seu Email*</h2></label>
                         <input type="text" name="y1" placeholder="Ex: joao.da.silva@gmail.com">
                     </div>
                         
                     <div class="contato_div">
-                        <label for=""><h2>Telefone:</h2></label>
-                        <input type="text" name="resultado1" placeholder="Telefone">
+                        <label for=""><h2>Telefone*</h2></label>
+                        <input type="text" name="resultado1" placeholder="(51) 9 9999-9999">
                     </div>
 
                     <div class="container_compress">
                         <div class="Div_50p">
-                            <label for=""><h2>Data de entrada</h2></label>
+                            <label for=""><h2>Data de entrada*</h2></label>
                             <input type="date" name="x2" placeholder="Email">
                         </div>
 
                         <div class="Div_50p">
-                            <label for=""><h2>Data de saida</h2></label>
+                            <label for=""><h2>Data de saida*</h2></label>
                             <input type="date" name="y2" placeholder="Email">
                         </div>
                     </div>
 
                     <div class="container_compress">
                         <div class="Div_50p">
-                            <label for=""><h2>Adultos</h2></label>
+                            <label for=""><h2>Adultos*</h2></label>
                             <select name="adultos">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -44,7 +45,7 @@
                         </div>
 
                         <div class="Div_50p">
-                            <label for=""><h2>Crianças</h2></label>
+                            <label for=""><h2>Crianças*</h2></label>
                             <select name="criancas">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -56,16 +57,39 @@
                     </div>
                     <div class="contato_div">
                         <label for=""><h2>Mensagem</h2></label>
-                        <input type="number" name="resultado2" placeholder="Escreva sua mensagem"> 
+                        <input type="number" name="Mensagem" placeholder="Escreva sua mensagem"> 
                     </div>
 
                     <input class="submit" type="submit" value="Enviar">
                 </form>
             </div>    
-            <img class="back_big" src="./img/blob1_contato.svg" alt="">
+            <img class="back_big" src="./img/blob1_sobre.svg" alt="">
             <div class="border"></div>
         </div>
 
-        <div></div>
+        <div class="container_info t">
+            <h1>Entre em contato</h1>
+            <p>Seguem logo a baixo dados para contato;</p>
+            <div class="info">
+                <a href="https://api.whatsapp.com/send?phone=5551996546118">
+                    <div class="info1">
+                        <div class="info_img"><img src="./img/phone_white.svg" alt=""><h2>Fale Conosco:</h2></div>
+                        <p>(51) 99654-6118</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/maps/dir//Pousada+Silvestre/@-29.9965923,-50.217198,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x951873e04794c071:0xc458dc5f1a192f8f!2m2!1d-50.1471578!2d-29.9966108">
+                <div class="info2">
+                    <div class="info_img"><img src="./img/geo_white.svg" alt=""><h2>Localização:</h2></div>
+            <pre>
+            Avenida Militão de Almeida, 835 
+            São José, Tramandaí, RS. 
+            95590-000 
+            Brasil
+            </pre>
+                </div>
+                </a>
+            </div>
+            <img class="back_big" src="./img/blob2_contato.svg" alt="">
+        </div>
     </section>
 {% include "footer.html" %}
