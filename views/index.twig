@@ -1,51 +1,74 @@
 {% include "header.html" %}
 
-    <section >
-        <div class="containerIMGs t">
-            <div> 
-                <a class="link-reserva-Min t" href=""><button class="button"><h2>Clique e consulte já disponibilidade:</h2></button></a>
-                <img class="wave1 t" src="./img/wave_reserva.svg" alt="">  
-            </div>
-            <div class="containerIMGs2">
-                <div class="section">
-                    <div>
-                        <img class="index1 blob1 t" src="./img/blob1.svg" alt="">
-                        <img class="index2 t" src="./img/quarto1.svg" alt="">
+    {% if dispositivo == "mobile" %}
+        <section>
+            <div class="containerIMGs">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="slide" src="./img/slide1.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide2.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide3.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide4.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide5.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide6.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide7.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide8.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide9.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide10.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide11.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide12.svg" alt=""></div>
                     </div>
-                    <div>
-                        <h2 class="titulos t">Acomodações</h2>
-                        <p class="textos t">&nbsp &nbsp Os quartos oferecem cama de casal e solteiro do tipo box, mesa de cabeceira, armário aberto, 
-                        internet wi-fi, frigobar e ar-condicionado. Nossas acomodações também contam com um banheiro completo e comodidades como: 
-                        roupa de cama e banho, sabonete, secador e ferro de passar roupa. Os moveis são em madeira de demolição, ar-condicionado
-                        e frigobar tipo “A” supereconômicos visando a preservação do meio ambiente. 
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+                <div> 
+                    <a class="link-reserva-Min" href=""><button class="button"><h2>Clique e consulte já disponibilidade:</h2></button></a>
+                    <img class="wave1" src="./img/wave_reserva.svg" alt="">  
+                </div>
+                <div class="containerIMGs2">
+                    <div class="section">
+                        <div>
+                            <img class="index1 blob1" src="./img/blob1.svg" alt="">
+                            <img class="index2" src="./img/quarto1.svg" alt="">
+                        </div>
+                        <div>
+                            <h2 class="titulos">Acomodações</h2>
+                            <p class="textos">&nbsp &nbsp Os quartos oferecem cama de casal e solteiro do tipo box, mesa de cabeceira, armário aberto, 
+                            internet wi-fi, frigobar e ar-condicionado. Nossas acomodações também contam com um banheiro completo e comodidades como: 
+                            roupa de cama e banho, sabonete, secador e ferro de passar roupa. Os moveis são em madeira de demolição, ar-condicionado
+                            e frigobar tipo “A” supereconômicos visando a preservação do meio ambiente. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div>
+                            <img class="index1" src="./img/blob2.svg" alt="">
+                            <img class="index2" src="./img/fachada2.svg" alt="">
+                        </div>
+                        <h2 class="titulos">Área de convivência</h2>
+                        <p class="textos">&nbsp &nbsp A pousada silvestre acredita na integração das pessoas e por isso temos um deck ao ar livre coberto 
+                        apenas pela Jurema nosso flamboyant, a cozinha compartilhada se abre para este espaço criando uma área comum onde se pode preparar 
+                        refeições e interagir com os hospedes estando em contado com a natureza.  
+                        Além disso como bons gaúchos em nossa área comum temos uma churrasqueira pronta para o uso dos hospedes.</p>
+                    </div>
+                    <div class="section">
+                        <div>
+                            <img class="index1" src="./img/blob3.svg" alt="">
+                            <img class="index2" src="./img/cozinha.svg" alt="">
+                        </div>
+                        <h2 class="titulos">Cozinha</h2>
+                        <p class="textos">&nbsp &nbsp Muitas pessoas que se hospedam em pousadas com cozinha se sentem “em casa” e esta é a nossa intenção 
+                        na Pousada Silvestre. Oferecemos uma cozinha equipada com fogão, forno elétrico, chaleira elétrica, micro-ondas, pratos, panelas, 
+                        louçãs e talheres para uso na pousada. Um dos benefícios da cozinha compartilhada é a convivência na área comum e troca de experiencias. 
+                        Outro ponto interessante sem dúvida, é a economia financeira.  
                         </p>
                     </div>
                 </div>
-                <div class="section">
-                    <div>
-                        <img class="index1 t" src="./img/blob2.svg" alt="">
-                        <img class="index2 t" src="./img/fachada2.svg" alt="">
-                    </div>
-                    <h2 class="titulos t">Área de convivência</h2>
-                    <p class="textos t">&nbsp &nbsp A pousada silvestre acredita na integração das pessoas e por isso temos um deck ao ar livre coberto 
-                    apenas pela Jurema nosso flamboyant, a cozinha compartilhada se abre para este espaço criando uma área comum onde se pode preparar 
-                    refeições e interagir com os hospedes estando em contado com a natureza.  
-                    Além disso como bons gaúchos em nossa área comum temos uma churrasqueira pronta para o uso dos hospedes.</p>
-                </div>
-                <div class="section">
-                    <div>
-                        <img class="index1 t" src="./img/blob3.svg" alt="">
-                        <img class="index2 t" src="./img/cozinha.svg" alt="">
-                    </div>
-                    <h2 class="titulos t">Cozinha</h2>
-                    <p class="textos t">&nbsp &nbsp Muitas pessoas que se hospedam em pousadas com cozinha se sentem “em casa” e esta é a nossa intenção 
-                    na Pousada Silvestre. Oferecemos uma cozinha equipada com fogão, forno elétrico, chaleira elétrica, micro-ondas, pratos, panelas, 
-                    louçãs e talheres para uso na pousada. Um dos benefícios da cozinha compartilhada é a convivência na área comum e troca de experiencias. 
-                    Outro ponto interessante sem dúvida, é a economia financeira.  
-                    </p>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    {% elseif dispositivo == "computador" %}
+
+    {% endif %}
     
 {% include "footer.html" %}

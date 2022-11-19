@@ -1,60 +1,50 @@
 {% include "header.html" %}
-    <section>
-        <div class="container_big t">
-            <div>
-                <h1 class="sobre_font">Sobre a Pousada</h1>
-                <p>&nbsp &nbsp A Pousada Silvestre é uma pousada urbana no coração de Tramandaí a poucos minutos do centro comercial
-                da cidade, a 50 metros de um dos maiores mercados da região o que possibilita um dia a dia mais simples e prático.  
-                <br>&nbsp &nbsp O acesso à praia é super tranquilo, em menos de 15 min você já esta na orla.  O centro e demais atrações da capital litorânea ficam ainda mais próximos.  
-                <br>&nbsp &nbsp Na Pousada Silvestre, você encontra conforto e praticidade para usufruir de uma hospedagem tranquila e prazerosa. 
-                Estamos em funcionamento desde de 2020 e temos mais de 30 anos de experiencia no ramo. 
-                Esperamos vocês em Tramandaí.</p>
-            </div>    
-            <img class="back_big" src="./img/blob1_sobre.svg" alt="">
-            <div class="border"></div>
-        </div>
-        <div class="container_fotos">
-            <h1>Galeria</h1>
-            <div>
-                <img class="back_img" src="./img/blob2_sobre.svg" alt="">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img class="slide" src="./img/slide1.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide2.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide3.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide4.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide5.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide6.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide7.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide8.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide9.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide10.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide11.svg" alt=""></div>
-                        <div class="swiper-slide"><img class="slide" src="./img/slide12.svg" alt=""></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
+    {% if dispositivo == "mobile" %}
+        <section>
+            <div class="container_big">
+                <div>
+                    <h1 class="sobre_font">Sobre a Pousada</h1>
+                    <p>&nbsp &nbsp A Pousada Silvestre é uma pousada urbana no coração de Tramandaí a poucos minutos do centro comercial
+                    da cidade, a 50 metros de um dos maiores mercados da região o que possibilita um dia a dia mais simples e prático.  
+                    <br>&nbsp &nbsp O acesso à praia é super tranquilo, em menos de 15 min você já esta na orla.  O centro e demais atrações da capital litorânea ficam ainda mais próximos.  
+                    <br>&nbsp &nbsp Na Pousada Silvestre, você encontra conforto e praticidade para usufruir de uma hospedagem tranquila e prazerosa. 
+                    Estamos em funcionamento desde de 2020 e temos mais de 30 anos de experiencia no ramo. 
+                    Esperamos vocês em Tramandaí.</p>
+                </div>    
+                <img class="back_big" src="./img/blob1_sobre.svg" alt="">
+                <div class="border"></div>
             </div>
-            <div class="border"></div>
-        </div>
-        <div class="wave_duvida t"> 
-            <a class="link-reserva-Min android" href=""><button class="button"><h2>Qualquer dúvida entre em contato conosco:</h2></button></a>
-            <img class="wave1 android" src="./img/wave_reserva.svg" alt="">  
-        </div>
+            <div class="container_fotos">
+                <h1>Galeria</h1>
+                <div>
+                    <img class="back_img" src="./img/blob2_sobre.svg" alt="">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="slide" src="./img/slide1.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide2.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide3.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide4.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide5.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide6.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide7.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide8.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide9.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide10.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide11.svg" alt=""></div>
+                            <div class="swiper-slide"><img class="slide" src="./img/slide12.svg" alt=""></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div class="wave_duvida"> 
+                <a class="link-reserva-Min android" href=""><button class="button"><h2>Qualquer dúvida entre em contato conosco:</h2></button></a>
+                <img class="wave1 android" src="./img/wave_reserva.svg" alt="">  
+            </div>
+        </section>
+    {% elseif dispositivo == "computador" %}
 
-
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-        
-        <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            },
-        });
-        </script>
-
-    </section>
+    {% endif %}
 {% include "footer.html" %}

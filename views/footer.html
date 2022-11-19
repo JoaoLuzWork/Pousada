@@ -1,4 +1,4 @@
-    <footer>
+<footer>
         <div class="footer">
             <div class="footer_logo">
                     <img class="Large_Logo" src="./img/LargeLogo.svg" alt="">
@@ -28,8 +28,23 @@
                 </dl>
             </div>
             <img  class="footer_img_P" src="./img/footer-img_P.svg" alt="">
-            <img class="footer_img_G" src="./img/footer-img.svg" alt="">
-        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>

@@ -29,6 +29,7 @@ h1
 
 body
 {
+    
     overflow-x: hidden;
 }
 
@@ -102,21 +103,9 @@ a:active
    visibility: hidden;
 }
 
-.android
+.navIcon
 {
-    position: absolute;
-    visibility: hidden;
-}
-
-.searchBar
-{
-    position: absolute;
-    visibility: hidden;
-}
-
-.branco
-{
-    color: white;
+    posoition: absolute;
 }
 
 .link-reserva-Min
@@ -133,7 +122,7 @@ a:active
     position: absolute;
     background-color: var(--ligthBlue);
     margin-left: 10%;
-    height: 50px;
+    height: 75px;
     box-shadow: 0px 2px 7px gray;
     border-radius: 50px;
 }
@@ -165,7 +154,7 @@ a:active
 
 .section
 {       
-    margin-top: 110%;
+    margin-top: 120%;
 }
 
 footer
@@ -308,16 +297,16 @@ footer h4
     color: white;
 }
 
-.t
+.phone
 {
-    transform: translateX(5000px); 
+    transform: translateX(5000px);
 }
 
 @media screen and ( max-width: 700px) 
 {
     
     
-    .t
+    .phone
     {
         transform: translateX(0px);
     }
