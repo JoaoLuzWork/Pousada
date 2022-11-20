@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Paleta de cores */
 :root
 {
     --darkBlue: #185F8F;
@@ -8,6 +9,7 @@
     --darkBlue-shadow: #185f8fc5;
 }
 
+/* configurações gerais */
 *
 {
     margin: 0%;
@@ -41,10 +43,20 @@ button
 
 header
 {
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
+    margin-top: 0%;
+    z-index: 100;
+}
+
+section
+{
+    display: flex;
+    flex-direction: column;
 }
 
 a
@@ -62,6 +74,32 @@ a:active
     color: var(--Blue);
 }
 
+footer
+{
+    margin-top: 10%;
+    margin-bottom: 0%;
+    width: 100%;
+}
+
+footer p
+{
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin-top: 2%;
+    color: white;
+}
+
+footer h2
+{
+    font-size: clamp(1rem, 6vw, 2rem);
+    color: white;
+}
+
+footer h4
+{
+    color: white;
+}
+
+/* header */
 .headerContainer
 {
     display: flex;
@@ -105,7 +143,7 @@ a:active
 
 .navIcon
 {
-    posoition: absolute;
+    transform: translateX(1000px);
 }
 
 .link-reserva-Min
@@ -116,20 +154,22 @@ a:active
     width: 100%;
     border-radius: 20px;
 }
-
+ 
+/* section mobile */
 .button
 {
     position: absolute;
     background-color: var(--ligthBlue);
     margin-left: 10%;
-    height: 75px;
+    height: 70px;
+    width: 80%;
     box-shadow: 0px 2px 7px gray;
     border-radius: 50px;
 }
 
 .button h2
 {
-    font-size: medium;
+    font-size: clamp(1em, 5vw, 2rem);             
     color: white;
     text-shadow: 1px 1px 2px #000;
 }
@@ -137,12 +177,6 @@ a:active
 .button:active {
     transform: translateY(5px);
     box-shadow: 0px 0px 0px ;
-}
-
-.container1
-{
-    display: flex;
-    align-items: center;
 }
 
 .wave1
@@ -157,35 +191,17 @@ a:active
     margin-top: 120%;
 }
 
-footer
+.container_section
 {
-    margin-top: 140%;
-    margin-bottom: 0%;
-    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 140%;
 }
 
+/* footer */
 .footer
 {
     display: flex;
     justify-content:space-between;
-}
-
-footer p
-{
-    font-size: clamp(1rem, 4vw, 2rem);
-    margin-top: 2%;
-    color: white;
-}
-
-footer h2
-{
-    font-size: clamp(1rem, 6vw, 2rem);
-    color: white;
-}
-
-footer h4
-{
-    color: white;
 }
 
 .redes
@@ -201,6 +217,7 @@ footer h4
 {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 .Large_Logo
@@ -233,38 +250,6 @@ footer h4
     left: 2%;
     padding-bottom: 3%;
     gap: 20px;
-    z-index: 3;
-}
-
-.link_redes1
-{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    gap: 2px;
-    margin-top:5%;
-    z-index: 3;
-}
-
-.link_redes2
-{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    gap: 2px;
-    margin-top:5%;
-    margin-left:20%;
-    z-index: 3;
-}
-
-.link_redes3
-{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    gap: 2px;
-    margin-top:5%;
-    margin-left:40%;
     z-index: 3;
 }
 
@@ -311,11 +296,6 @@ footer h4
         transform: translateX(0px);
     }
 
-    a
-    {
-        font-size: larger;
-    }
-
     a:hover
     {
         color: var(--darkBlue);  
@@ -330,6 +310,7 @@ footer h4
     .navIcon
     {
         position:initial;
+        transform: translateX(0px);
     }
 
     .navBar
@@ -340,11 +321,13 @@ footer h4
         align-items: flex-start;
         text-decoration: underline;
         visibility: visible;
+        background-color: white;
         gap: 5px;
         padding-top: 2%;
         padding-bottom: 1em;
         border-radius: 0px 0px 10px 10px;
         box-shadow: 0px 2px 5px 0px var(--darkBlue-shadow);
+        z-index: 2;
     }
 
     .navBar a
@@ -420,18 +403,6 @@ footer h4
         text-align: justify;
     }
 
-    .button
-    {
-        height: 75px;
-        width: 80%;
-    }
-
-    .button h2
-    {
-        font-size: clamp(1em, 5vw, 2rem); 
-            
-    }
-
     .containerIMGs
     {
         display: flex;
@@ -462,7 +433,8 @@ footer h4
 
     .redes_logo
     {
-        width: 30px;
+        font-size: clamp(1rem, 5vw, 2rem);
+
     }
 
     .swiper 
@@ -470,6 +442,13 @@ footer h4
         width: 100%;
         height: 100%;
         margin-top: 20%;
+    }
+
+    .swiperMod
+    {
+        width: 100%;
+        height: 100%;
+        margin-top: 0%;
     }
 
     .swiper-slide 
@@ -511,6 +490,7 @@ footer h4
         display: flex;
         flex-direction: column;
         padding-bottom: 50px;
+        margin-top: 20%;
         border-bottom-width: 80%;
         margin-bottom: 10%;
     }
@@ -667,7 +647,6 @@ footer h4
     
     .container_info
     {
-        position: absolute; 
         display: flex;
         flex-direction: column;  
     }
@@ -743,13 +722,5 @@ footer h4
     {
         font-size: clamp(10px, 5vw, 2rem);
         color: white;
-    }
-}
-
-@media screen and ( max-width: 540px) 
-{
-    .button
-    {
-        height: 50px;
     }
 }
