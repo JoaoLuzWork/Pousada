@@ -1,6 +1,6 @@
 {% include "header.html" %}
     {% if dispositivo == "mobile" %}
-        <section>
+        <section class="phone">
             <div class="container_big">
                 <div>
                     <h1 class="cont_font">Consulte disponibilidade</h1>
@@ -72,12 +72,14 @@
                 <h1>Entre em contato</h1>
                 <p>Seguem logo a baixo dados para contato;</p>
                 <div class="info">
-                    <a href="https://api.whatsapp.com/send?phone=5551996546118">
                         <div class="info1">
                             <div class="info_img"><img src="./img/phone_white.svg" alt=""><h2>Fale Conosco:</h2></div>
-                            <p>(51) 99654-6118</p>
+                            <div class="redes_icon_cont">
+                                <a href="https://www.instagram.com/pousada.silvestre/"><img class="redes_logo" src="./img/instagram_logo.svg" alt=""></a>
+                                <a href="https://www.facebook.com/silvestrepousada"><img class="redes_logo" src="./img/fecebook_logo.svg" alt=""></a>
+                                <a href="https://api.whatsapp.com/send?phone=5551996546118"><img class="redes_logo" src="./img/whatsapp_logo.svg" alt=""></a>
+                            </div>
                         </div>
-                    </a>
                     <a href="https://www.google.com/maps/dir//Pousada+Silvestre/@-29.9965923,-50.217198,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x951873e04794c071:0xc458dc5f1a192f8f!2m2!1d-50.1471578!2d-29.9966108">
                     <div class="info2">
                         <div class="info_img"><img src="./img/geo_white.svg" alt=""><h2>Localização:</h2></div>
@@ -89,7 +91,7 @@
                 </pre>
                     </div>
                     </a>
-                </div>
+                        </div>
                 <img class="back_big" src="./img/blob2_contato.svg" alt="">
             </div>
         </section>

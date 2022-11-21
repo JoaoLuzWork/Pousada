@@ -1,7 +1,7 @@
 {% include "header.html" %}
 
     {% if dispositivo == "mobile" %}
-        <section>
+        <div class="phone">
             <div class="containerIMGs">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -28,21 +28,19 @@
                     <img class="wave1" src="./img/wave_reserva.svg" alt="">  
                 </div>
                 <div class="containerIMGs2">
-                    <div class="section">
+                    <div class="section_mob">
                         <div>
-                            <img class="index1 blob1" src="./img/blob1.svg" alt="">
+                            <img class="index1" src="./img/blob1.svg" alt="">
                             <img class="index2" src="./img/quarto1.svg" alt="">
                         </div>
-                        <div>
                             <h2 class="titulos">Acomodações</h2>
                             <p class="textos">&nbsp &nbsp Os quartos oferecem cama de casal e solteiro do tipo box, mesa de cabeceira, armário aberto, 
                             internet wi-fi, frigobar e ar-condicionado. Nossas acomodações também contam com um banheiro completo e comodidades como: 
                             roupa de cama e banho, sabonete, secador e ferro de passar roupa. Os moveis são em madeira de demolição, ar-condicionado
                             e frigobar tipo “A” supereconômicos visando a preservação do meio ambiente. 
                             </p>
-                        </div>
                     </div>
-                    <div class="section">
+                    <div class="section_mob">
                         <div>
                             <img class="index1" src="./img/blob2.svg" alt="">
                             <img class="index2" src="./img/fachada2.svg" alt="">
@@ -53,7 +51,7 @@
                         refeições e interagir com os hospedes estando em contado com a natureza.  
                         Além disso como bons gaúchos em nossa área comum temos uma churrasqueira pronta para o uso dos hospedes.</p>
                     </div>
-                    <div class="section">
+                    <div class="section_mob">
                         <div>
                             <img class="index1" src="./img/blob3.svg" alt="">
                             <img class="index2" src="./img/cozinha.svg" alt="">
@@ -67,9 +65,53 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     {% elseif dispositivo == "computador" %}
-
+        <div class="container_home_pc">
+            <div class="swiper_pc">
+                <div class="swiper mySwiper reduce">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="slide" src="./img/slide1Pc.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide2PC.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide3PC.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide4PC.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide5PC.svg" alt=""></div>
+                        <div class="swiper-slide"><img class="slide" src="./img/slide6PC.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="img_home_pc">
+                    <div class="section">
+                        <img class="box" src="./img/quarto1.svg" alt="">
+                        <h2>Acomodações</h2>
+                        <p>&nbsp &nbsp Os quartos oferecem cama de casal e solteiro do tipo box, mesa de cabeceira, armário aberto, 
+                        internet wi-fi, frigobar e ar-condicionado. Nossas acomodações também contam com um banheiro completo e comodidades como: 
+                        roupa de cama e banho, sabonete, secador e ferro de passar roupa. Os moveis são em madeira de demolição, ar-condicionado
+                        e frigobar tipo “A” supereconômicos visando a preservação do meio ambiente. 
+                        </p>
+                    </div>
+                    <div class="section">
+                        <img class="box" src="./img/fachada2.svg" alt="">
+                        <h2>Área de convivência</h2>
+                        <p>&nbsp &nbsp A pousada silvestre acredita na integração das pessoas e por isso temos um deck ao ar livre coberto 
+                        apenas pela Jurema nosso flamboyant, a cozinha compartilhada se abre para este espaço criando uma área comum onde se pode preparar 
+                        refeições e interagir com os hospedes estando em contado com a natureza.  
+                        Além disso como bons gaúchos em nossa área comum temos uma churrasqueira pronta para o uso dos hospedes.</p>
+                    </div>
+                    <div class="section">
+                        <img class="box" src="./img/cozinha.svg" alt="">
+                        <h2>Cozinha</h2>
+                        <p>&nbsp &nbsp Muitas pessoas que se hospedam em pousadas com cozinha se sentem “em casa” e esta é a nossa intenção 
+                        na Pousada Silvestre. Oferecemos uma cozinha equipada com fogão, forno elétrico, chaleira elétrica, micro-ondas, pratos, panelas, 
+                        louçãs e talheres para uso na pousada. Um dos benefícios da cozinha compartilhada é a convivência na área comum e troca de experiencias. 
+                        Outro ponto interessante sem dúvida, é a economia financeira.  
+                        </p>
+                    </div>
+            </div>
+            <div class="border_pc"></div>
+        </div>
     {% endif %}
     
 {% include "footer.html" %}
