@@ -1,6 +1,6 @@
 <?php 
 function getConexao(){
-    $host = "mysql:host=localhost;dbname=testes";
+    $host = "mysql:host=localhost;dbname=pousada";
     $usuario = "root";
     $password = "";
 
