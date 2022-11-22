@@ -3,7 +3,7 @@
     {% if dispositivo == "mobile" %}
         <div class="phone">
             <div class="containerIMGs">
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper space">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img class="slide" src="./img/Slide_Home1.png" alt=""></div>
                         <div class="swiper-slide"><img class="slide" src="./img/Slide_Home2.png" alt=""></div>
@@ -23,7 +23,6 @@
             <div class="container_section">
                 <div class="containerIMGs2">
                 <div> 
-                    <a class="link-reserva-Min" href=""><button class="button"><h2>Clique e consulte já disponibilidade:</h2></button></a>
                     <img class="wave1" src="./img/wave_reserva.svg" alt="">  
                 </div>
                     <div class="section_mob">
@@ -60,6 +59,9 @@
                     </div>
                 </div>
             </div>
+            <div class="border_pc"></div>
+            <a href="https://api.whatsapp.com/send?phone=5551996546118" ><button class="button"> <h1>Consulte já disponibilidade:</h1></button></a>
+        
         </div>
     {% elseif dispositivo == "computador" %}
         <div class="container_home_pc">
@@ -109,8 +111,7 @@
                     </div>
             </div>
             <div class="border_pc"></div>
-            <button> <h1>Consulte já disponibilidade:</h1></button>
-            <div class="border_pc"></div>
+            <a href="https://api.whatsapp.com/send?phone=5551996546118" ><button> <h1>Consulte já disponibilidade:</h1></button></a>
         </div>
     {% endif %}
     
