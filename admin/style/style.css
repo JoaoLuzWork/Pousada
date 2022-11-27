@@ -24,6 +24,7 @@ input
 h1
 {
     font-size: clamp(1rem, 8vw, 3rem);
+    color: white;
 }
 
 body
@@ -90,6 +91,17 @@ a:active
     align-items: center;
     justify-content: space-around;
     gap: 20px;
+}
+
+.nav div img
+{
+    width: 30px;
+}
+
+.nav a
+{
+    display: flex;
+    align-items: center;
 }
 
 /* login */

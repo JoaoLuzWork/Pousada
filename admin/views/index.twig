@@ -1,4 +1,6 @@
+{% include "header.twig" %}
 <div class="container">
+    {{msg}}
     <h1>Sing in:</h1>
     <form class="form_b" action="./src/login.php" method="post">
         <div class="divCont">
@@ -10,3 +12,4 @@
         <button>Login</button>
     </form>
 </div>
+{% include "footer.twig" %}

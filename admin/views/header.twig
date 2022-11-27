@@ -10,12 +10,17 @@
     <body>
         <header>
             <div class="headerContainer">
-                    <h2 class="tittle">Pousada Silvestre</h2>
+                <h2 class="tittle">Pousada Silvestre Admin</h2>
+                <form action="users.php" method="GET">
+                    <img src="search"></img>
+                    <input id="search" name="search" type="text" placeholder="Type here">
+                    <input id="submit" type="submit" value="Search">
+                </form>
                 <nav class="nav">
                     <div>
-                        <a href="index.php">Home</a> 
-                        <a href="sobre.php">Sobre a Pousada</a> 
-                        <a href="https://www.google.com/maps/dir//Pousada+Silvestre/@-29.9965923,-50.217198,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x951873e04794c071:0xc458dc5f1a192f8f!2m2!1d-50.1471578!2d-29.9966108">Rotas</a> 
+                        <a href="reservas.php">Reservas</a> 
+                        <a href="quartos.php">Quartos</a> 
+                        <a href="add.php">Novas Reservas <img src="./../img/plus.svg"></img></a> 
                     </div>   
                 </nav>
             </div>
