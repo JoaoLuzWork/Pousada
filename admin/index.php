@@ -3,19 +3,24 @@
 
     $loader = new \Twig\Loader\FilesystemLoader('./views');
     $twig = new \Twig\Environment($loader);
-
-    if(isset($_GET['msg'])){
+    
+   /*  
+   if($_GET['msg']){
         switch ($_GET['msg']){
             case "erro_Login":
                 $msg = "Falha no login!";
                 break; 
+            case "noPermission":
+                $msg = "Você não tem permissão!";
+                break; 
             default:
-                $msg = '<Erro!';
+                $msg = '';
                 break;
         }
     }
+    */
     $dados = array(
-        'msg' => $msg
+
     );
 
     $template = $twig->load('./index.twig');

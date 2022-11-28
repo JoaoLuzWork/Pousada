@@ -1,39 +1,37 @@
 {% include "header.twig" %}
-    <div >
-        <form action="./quartos_Edit.php" class="container_quartos">
+    <div class="container_quartos">
             {% for quartos in quartos %}
-            {% if quartos.estado == "Livre" or "livre" %}
-                <div class="quartos livre">
-                    <div>
-                    <h1>{{quartos.id}}  {{quartos.estado}}</h1>
-                    <h2></h2> 
-                    </div>
-                </div>  
-            {% elseif quartos.estado == "Ocupado" %}
-                <div class="quartos ocupado">
-                    <div>
-                    <h1>{{quartos.id}}  {{quartos.estado}}</h1>
-                    <h2></h2> 
-                    </div> 
-                </div>
-            {% elseif quartos.estado == "Manutenção" %}
-                <div class="quartos livre">
-                    <div>
-                    <h1>{{quartos.id}}  {{quartos.estado}}</h1>
-                    <h2></h2> 
-                    </div> 
-                </div>
-            {% elseif quartos.estado == "Limpeza" %}
-                <div class="quartos livre">
-                    <div>
-                    <h1>{{quartos.id}}  {{quartos.estado}}</h1>
-                    <h2></h2> 
-                    </div> 
-                </div>
-            {% endif %}
-                
+                {% if quartos.estado == "livre" %}
+                    <div class="quartos">
+                        <div class="organiza">
+                            <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                            <div class="livre"></div>
+                        </div>
+                    </div>  
+                {% elseif quartos.estado == "ocupado" %}
+                    <div class="quartos">
+                        <div class="organiza">
+                            <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                            <div class="ocupado"></div>
+                        </div>
+                    </div>  
+                {% elseif quartos.estado == "manutenção" %}
+                    <div class="quartos">
+                        <div class="organiza">
+                            <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                            <div class="manutencao"></div>
+                        </div>
+                    </div>  
+                {% elseif quartos.estado == "limpeza" %}
+                    <div class="quartos">
+                        <div class="organiza">
+                            <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                            <div class="limpeza"></div>
+                        </div>
+                    </div>  
+                {% endif %}
+                    
             {% endfor %}
-            <input type="submit" value="Editar" name="submit">
-        </form>
+            <a href="./form_Edit_Quartos.php?id="{{quartos.id}}><h3>Edit</h3></a>
     </div>
 {% include "footer.twig" %}

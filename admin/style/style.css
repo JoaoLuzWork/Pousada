@@ -138,6 +138,20 @@ a:active
     background-color: var(--ligthBlue);
 }
 
+/* index */
+
+.form_b
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_b h2
+{
+    color: white;
+}
+
 /* login */
 .container
 {
@@ -174,7 +188,8 @@ a:active
     flex-wrap: wrap;
     width: 80%;
     margin: 10%;
-    border: 2px solid var(--darkBlue);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px var(--darkBlue);
     align-items: center;
 
 }
@@ -184,18 +199,122 @@ a:active
     display: flex;
     flex-direction: column;
     border: 2px solid var(--darkBlue);
+    border-radius: 10px;
+    gap: 10px;
     margin: 1%;
     width: 100%;
 }
 
+.container_quartos a
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40%;
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color:white;
+    background-color: #185F8F;
+}
+
+.container_quartos a h3
+{
+    color: white;
+}
+
+.container_quartos a:hover
+{
+    background-color: var(--Blue);
+}
+
+.container_quartos a:active
+{
+    background-color: var(--ligthBlue);
+}
+
+.quartos input
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40%;
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color:white;
+    background-color: #185F8F;
+}
+
+.quartos input:hover
+{
+    background-color: var(--Blue);
+}
+
+.quartos input:active
+{
+    background-color: var(--ligthBlue);
+}
+
+
+.quartos input h3
+{
+    color: white;
+}
+
+.organiza
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#organiza
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.organiza h1
+{
+    margin-left: 2%;
+}
+
 .livre
 {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
     background-color: #44ff7fd4;
 }
 
 .ocupado
 {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
     background-color: #fe6b60d4;
+}
+
+.manutencao
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #fee960d4;
+}
+
+.limpeza
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: var(--darkBlue);
 }
 
 .quartos h1

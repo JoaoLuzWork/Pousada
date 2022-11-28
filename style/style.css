@@ -832,4 +832,9 @@ footer h4
         margin-top: 10%;
     }
 
+    .container_fotos h1
+    {
+        margin-left: 40%;
+        margin-right: 40%;
+    }
 }

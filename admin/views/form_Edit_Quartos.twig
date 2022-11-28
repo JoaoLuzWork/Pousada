@@ -1,0 +1,65 @@
+{% include "header.twig" %}
+    <div class="container_quartos">
+            {% for quartos in quartos %}
+                <form action="./src/Edit_quarto.php?id={{quartos.id}}" class="quartos" method="POST">
+                    {% if quartos.estado == "livre" %}
+                        <div id="organiza">
+                            <div class="organiza">
+                                <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                                <div class="livre"></div>
+                            </div>
+                            <select name="estado">
+                                <option value="livre" selected>Livre</option>
+                                <option value="ocupado">Ocupado</option>
+                                <option value="manutenção">Manutenção</option>
+                                <option value="limpeza">Limpeza</option>
+                            </select>
+                            <input type='submit' value='Confirmar alterações' name='submit'>
+                        </div> 
+                    {% elseif quartos.estado == "ocupado"%}
+                        <div id="organiza">
+                            <div class="organiza">
+                                <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                                <div class="ocupado"></div>
+                            </div>
+                            <select name="estado">
+                                <option value="ocupado" selected>Ocupado</option>
+                                <option value="livre">Livre</option>
+                                <option value="manutenção">Manutenção</option>
+                                <option value="limpeza">Limpeza</option>
+                            </select>
+                            <input type='submit' value='Confirmar alterações' name='submit'>
+                        </div> 
+                    {% elseif quartos.estado == "manutenção" %}
+                        <div id="organiza">
+                            <div class="organiza">
+                                <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                                <div class="manutencao"></div>
+                            </div>
+                            <select name="estado">
+                                <option value="livre">Livre</option>
+                                <option value="ocupado">Ocupado</option>
+                                <option value="manutenção" selected>Manutenção</option>
+                                <option value="limpeza">Limpeza</option>
+                            </select>
+                            <input type='submit' value='Confirmar alterações' name='submit'>
+                        </div> 
+                    {% elseif quartos.estado == "limpeza" %}
+                        <div id="organiza">
+                            <div class="organiza">
+                                <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                                <div class="limpeza"></div>
+                            </div> 
+                            <select name="estado">
+                                <option value="livre">Livre</option>
+                                <option value="ocupado">Ocupado</option>
+                                <option value="manutenção">Manutenção</option>
+                                <option value="limpeza" selected>Limpeza</option>
+                            </select>
+                            <input type='submit' value='Confirmar alterações' name='submit'>
+                        </div> 
+                    {% endif %}       
+                </form>
+            {% endfor %}
+    </div>
+{% include "footer.twig" %}
