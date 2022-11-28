@@ -18,13 +18,23 @@
 
 input
 {
-    border: none;
+    border: 1px solid var(--darkBlue);
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 20px;
+    border-radius: 10px;
 }
 
 h1
 {
     font-size: clamp(1rem, 8vw, 3rem);
     color: white;
+}
+
+div
+{
+    color: #185F8F;
 }
 
 body
@@ -104,6 +114,30 @@ a:active
     align-items: center;
 }
 
+.nav form
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+#submit
+{
+    color: white;
+    background-color: var(--darkBlue);
+}
+
+#submit:hover
+{
+    background-color: var(--Blue);
+}
+
+#submit:active
+{
+    background-color: var(--ligthBlue);
+}
+
 /* login */
 .container
 {
@@ -129,4 +163,42 @@ a:active
     display: flex;
     justify-content: space-between; 
     margin: 20px;
+}
+
+/* quartos */
+
+.container_quartos
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10%;
+    border: 2px solid var(--darkBlue);
+    align-items: center;
+
+}
+
+.quartos
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--darkBlue);
+    margin: 1%;
+    width: 100%;
+}
+
+.livre
+{
+    background-color: #44ff7fd4;
+}
+
+.ocupado
+{
+    background-color: #fe6b60d4;
+}
+
+.quartos h1
+{
+    color: black;    
 }

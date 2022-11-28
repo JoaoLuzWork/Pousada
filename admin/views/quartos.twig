@@ -1,0 +1,39 @@
+{% include "header.twig" %}
+    <div >
+        <form action="./quartos_Edit.php" class="container_quartos">
+            {% for quartos in quartos %}
+            {% if quartos.estado == "Livre" or "livre" %}
+                <div class="quartos livre">
+                    <div>
+                    <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                    <h2></h2> 
+                    </div>
+                </div>  
+            {% elseif quartos.estado == "Ocupado" %}
+                <div class="quartos ocupado">
+                    <div>
+                    <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                    <h2></h2> 
+                    </div> 
+                </div>
+            {% elseif quartos.estado == "Manutenção" %}
+                <div class="quartos livre">
+                    <div>
+                    <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                    <h2></h2> 
+                    </div> 
+                </div>
+            {% elseif quartos.estado == "Limpeza" %}
+                <div class="quartos livre">
+                    <div>
+                    <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                    <h2></h2> 
+                    </div> 
+                </div>
+            {% endif %}
+                
+            {% endfor %}
+            <input type="submit" value="Editar" name="submit">
+        </form>
+    </div>
+{% include "footer.twig" %}
