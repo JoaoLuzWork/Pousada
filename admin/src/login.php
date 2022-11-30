@@ -12,7 +12,6 @@
         if ($statement->rowCount() > 0){
             $row = $statement->fetch();
             session_start();
-            $_SESSION[''] = $row['admin_cond'];
             header('Location: ./../home.php');
         } else {
         }

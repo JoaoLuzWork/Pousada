@@ -15,11 +15,7 @@
     while ($row = $statement->fetch()) {
         $quartos[] = new Quartos($row["id"], $row["estado"]); 
     }
-    if ($_SESSION['admin_cond'] == 1){
-        
-        header('Location:index.php?msg=noPermission');
-
-    }
+   
     $parametros = ['quartos' => $quartos];
     $template = $twig->load('./quartos.twig');
     echo $template->render($parametros);

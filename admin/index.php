@@ -4,8 +4,7 @@
     $loader = new \Twig\Loader\FilesystemLoader('./views');
     $twig = new \Twig\Environment($loader);
     
-   /*  
-   if($_GET['msg']){
+   /*  if($_GET['msg']){
         switch ($_GET['msg']){
             case "erro_Login":
                 $msg = "Falha no login!";
@@ -19,6 +18,7 @@
         }
     }
     */
+    
     $dados = array(
 
     );
