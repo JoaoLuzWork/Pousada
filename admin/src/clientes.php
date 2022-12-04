@@ -20,7 +20,6 @@
 
         public function __construct($id, $nome, $dataNasc, $profissao, $estadoCivil, $RG, $CPF, $endereco, $nCasa, $cidade, $bairro, $email, $placaV, $phone, $acompanhante)
         {
-            
             $this->id = $id;
             $this->nome = $nome;
             $this->dataNasc = $dataNasc;

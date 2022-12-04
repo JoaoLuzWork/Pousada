@@ -11,11 +11,8 @@
     $statement = $db->prepare($sql);
     $statement->execute();
 
+    while ($row = $statement->fetch()){ $quartos[] = new Quartos($row["id"], $row["estado"]);}
 
-    while ($row = $statement->fetch()) {
-        $quartos[] = new Quartos($row["id"], $row["estado"]); 
-    }
-   
     $parametros = ['quartos' => $quartos];
     $template = $twig->load('./quartos.twig');
     echo $template->render($parametros);

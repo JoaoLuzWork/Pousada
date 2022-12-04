@@ -540,7 +540,12 @@ footer h4
     border-radius: 20px;
     padding: 2%;
     width: 100%;
-    gap: 30px;
+    gap: 31px;
+}
+
+.container_img_Pc img
+{
+    width: 100%;
 }
 
 .container_img_Pc img
@@ -548,35 +553,7 @@ footer h4
     width: 31.2%;
     border-radius: 20px;
 }
-/* Contato Pc */
-.container_contato_Pc
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-}
 
-.container_contato_Pc div
-{
-    margin-top: 10%;
-}
-
-.container_contato_Pc h1
-{
-    text-decoration: underline;
-}
-
-.contato_pc
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    border: 2px solid var(--darkBlue);
-}
 /* section mobile */
 .button
 {
