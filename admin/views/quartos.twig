@@ -1,31 +1,38 @@
 {% include "header.twig" %}
-    <div class="container_quartos">
+    <div class="container_geral">
+        <h1 class="tittle">Acomdações</h1>
+        <div class="container_quartos">
+            
             {% for quartos in quartos %}
                 {% if quartos.estado == "livre" %}
                     <div class="quartos">
                         <div class="organiza">
-                            <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                            <h1 class="num">N°{{quartos.id}}</h1>
+                            <h1>{{quartos.estado}}</h1>
                             <div class="livre"></div>
                         </div>
                     </div>  
                 {% elseif quartos.estado == "ocupado" %}
                     <div class="quartos">
                         <div class="organiza">
-                            <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                            <h1 class="num">N°{{quartos.id}}</h1>
+                            <h1>{{quartos.estado}}</h1>
                             <div class="ocupado"></div>
                         </div>
                     </div>  
                 {% elseif quartos.estado == "manutenção" %}
                     <div class="quartos">
                         <div class="organiza">
-                            <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                            <h1 class="num">N°{{quartos.id}}</h1>
+                            <h1>{{quartos.estado}}</h1>
                             <div class="manutencao"></div>
                         </div>
                     </div>  
                 {% elseif quartos.estado == "limpeza" %}
                     <div class="quartos">
                         <div class="organiza">
-                            <h1>{{quartos.id}}  {{quartos.estado}}</h1>
+                            <h1 class="num">N°{{quartos.id}}</h1>
+                            <h1>{{quartos.estado}}</h1>
                             <div class="limpeza"></div>
                         </div>
                     </div>  
@@ -33,5 +40,6 @@
                     
             {% endfor %}
             <a href="./form_Edit_Quartos.php?id="{{quartos.id}}><h3>Edit</h3></a>
+        </div>
     </div>
 {% include "footer.twig" %}

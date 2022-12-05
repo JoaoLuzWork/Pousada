@@ -8,5 +8,5 @@
         
     );
     
-    $template = $twig->load('./home.twig');
+    $template = $twig->load('./novas_reservas.twig');
     echo $template->render($dados);
